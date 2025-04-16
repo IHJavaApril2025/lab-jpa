@@ -54,15 +54,15 @@ public class PersonRepositoryTest {
 
         personRepository.saveAll(personList);
 
-//        List<Person> personListFound = personRepository.findAll();
-//        assertNotNull(personListFound);
-//
-//        System.out.println(Arrays.asList(personListFound));
-//
-//        assertEquals("Ditto", personListFound.get(0).getName());
-//        assertEquals(30, personListFound.get(0).getAge());
-//
-//        personRepository.deleteAll();
+        List<Person> personListFound = personRepository.findAll();
+        assertNotNull(personListFound);
+
+        System.out.println(Arrays.asList(personListFound));
+
+        assertEquals("Ditto", personListFound.get(0).getName());
+        assertEquals(30, personListFound.get(0).getAge());
+
+        personRepository.deleteAll();
     }
 
     @Test
