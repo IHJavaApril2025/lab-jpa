@@ -9,10 +9,10 @@ public class Person {
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
 
-    @Column(name="age")
+    @Column(name = "age")
     private int age;
 
     public Person() {
@@ -50,6 +50,10 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person [id=" + id + ", name=" + name + ", age=" + age + "]";
+        return "Person {\n" +
+                "    id=" + id + ",\n" +
+                "    name='" + name + "',\n" +
+                "    age=" + age + "\n" +
+                "}";
     }
 }
